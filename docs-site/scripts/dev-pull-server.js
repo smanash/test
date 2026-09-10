@@ -40,6 +40,49 @@ function git(args) {
   });
 }
 
+/**
+ * Network failures talking to GitHub are TRANSIENT and they look like a broken button.
+ *
+ * Observed live: `fatal: remote helper 'https' aborted session` — the identical command
+ * succeeded moments later. Reporting that as a failure sends someone off to debug wiring that
+ * is fine, mid-demo, while the change they merged sits there unpulled.
+ *
+ * The patterns below are all "the network let go", never "the repository is in a state you
+ * must resolve" — a merge conflict, a diverged branch or a refused fast-forward must surface
+ * IMMEDIATELY rather than being retried three times and reported late.
+ */
+const TRANSIENT_PATTERNS = [
+  /remote helper .* aborted session/i,
+  /could not read from remote repository/i,
+  /unable to access .*: (could not resolve host|failed to connect|operation timed out)/i,
+  /the remote end hung up unexpectedly/i,
+  /rpc failed/i,
+  /connection (timed out|reset|refused)/i,
+  /early eof/i,
+  /ssl.*(error|timeout)/i,
+];
+
+const isTransient = (output) => TRANSIENT_PATTERNS.some((re) => re.test(output));
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** `git pull --ff-only`, retried only on the network-shaped failures above. */
+async function pullWithRetry(maxAttempts = 3) {
+  let last;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    last = await git(['pull', '--ff-only']);
+    if (last.ok) return { ...last, attempts: attempt };
+
+    if (!isTransient(last.output)) return { ...last, attempts: attempt };
+
+    if (attempt < maxAttempts) {
+      console.warn(`[dev-pull] transient failure (attempt ${attempt}/${maxAttempts}) — retrying`);
+      await sleep(attempt * 700); // 0.7s, then 1.4s
+    }
+  }
+  return { ...last, attempts: maxAttempts, transient: true };
+}
+
 function send(res, status, body) {
   const payload = JSON.stringify(body);
   res.writeHead(status, {
@@ -71,12 +114,19 @@ const server = http.createServer(async (req, res) => {
   if (req.method === 'POST' && req.url === '/pull') {
     const branch = await git(['rev-parse', '--abbrev-ref', 'HEAD']);
     const before = await git(['rev-parse', 'HEAD']);
-    const pull = await git(['pull', '--ff-only']);
+    const pull = await pullWithRetry();
     const after = await git(['rev-parse', 'HEAD']);
 
     if (!pull.ok) {
-      console.error(`[dev-pull] FAILED\n${pull.output}`);
-      return send(res, 500, { ok: false, output: pull.output });
+      console.error(`[dev-pull] FAILED after ${pull.attempts} attempt(s)\n${pull.output}`);
+      return send(res, 500, {
+        ok: false,
+        // The browser says "network hiccup, try again" for a transient failure and shows git's
+        // own words for anything else — because those need opposite responses from a person.
+        transient: Boolean(pull.transient),
+        attempts: pull.attempts,
+        output: pull.output,
+      });
     }
 
     const changed = before.output !== after.output;

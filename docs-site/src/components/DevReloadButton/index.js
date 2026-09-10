@@ -49,7 +49,14 @@ export default function DevReloadButton() {
 
       if (!data.ok) {
         setState('error');
-        setMessage(data.output || 'git pull failed');
+        // A network blip and a real git problem need opposite responses from a person: one is
+        // "click it again", the other is "go and look at the repository". Saying so beats
+        // printing git's raw words for both — the transient one has already been retried.
+        setMessage(
+          data.transient
+            ? `Network hiccup reaching GitHub (retried ${data.attempts}×). Click Reload again.`
+            : data.output || 'git pull failed',
+        );
         return;
       }
 
