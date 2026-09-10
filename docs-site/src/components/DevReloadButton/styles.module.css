@@ -1,0 +1,129 @@
+/*
+ * Styles for the dev-only Reload button. Every colour comes from a Docusaurus theme variable so
+ * the control reads correctly in both light and dark mode — a demo where the button is invisible
+ * on the presenter's theme is a demo that stalls.
+ */
+
+.wrap {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 400; /* above the content, below Docusaurus' own navbar dropdowns */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  pointer-events: none; /* the wrapper is a layout box; only its children are clickable */
+}
+
+.button {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--ifm-color-primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18), 0 8px 24px -8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Keyboard focus must stay visible — the button is reachable by Tab like any other control. */
+.button:focus-visible {
+  outline: 3px solid var(--ifm-color-primary-lightest);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* The helper isn't running: the control is inert, and says so rather than looking merely broken. */
+.button[data-state='offline'] {
+  background: var(--ifm-color-emphasis-500);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  /* A refresh glyph drawn as a mask, so it inherits the button's text colour in both themes. */
+  background-color: currentColor;
+  mask: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a9 9 0 1 1-2.64-6.36'/%3E%3Cpolyline points='21 3 21 9 15 9'/%3E%3C/svg%3E");
+  -webkit-mask: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12a9 9 0 1 1-2.64-6.36'/%3E%3Cpolyline points='21 3 21 9 15 9'/%3E%3C/svg%3E");
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 2s;
+  }
+  .button {
+    transition: none;
+  }
+}
+
+.message {
+  pointer-events: auto;
+  max-width: 22rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.35);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.message[data-state='done'] {
+  border-color: var(--ifm-color-success);
+}
+
+.message[data-state='error'] {
+  border-color: var(--ifm-color-danger);
+}
+
+.message[data-state='offline'] {
+  border-color: var(--ifm-color-warning);
+}
+
+/* On a narrow screen the button keeps its place; the message gets the width it can have. */
+@media (max-width: 500px) {
+  .message {
+    max-width: calc(100vw - 2.5rem);
+  }
+}

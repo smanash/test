@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "dev": "node scripts/dev.js",
+    "pull-server": "node scripts/dev-pull-server.js",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
