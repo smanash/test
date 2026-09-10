@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Introduction
 ---
 
-# Netherland  — User Guide
+# INDIA  — User Guide
 
 Northwind Analytics turns a plain-English question into a working dashboard. You describe what you need, and it builds a real page your colleagues can open in a browser, along with somewhere to keep the data behind it.
 
@@ -15,7 +15,7 @@ This is a proof-of-concept documentation site. The product described here is fic
 
 :::
 
-## What's in this guide
+## What's in this guide&#x20;
 
 | Part                                         | Covers                                            | Read it when                  |
 | -------------------------------------------- | ------------------------------------------------- | ----------------------------- |
