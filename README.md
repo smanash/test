@@ -11,7 +11,7 @@ CMS — as a way of letting non-developers maintain documentation.
 
 1. A person with **no GitHub account** can edit documentation in a visual editor.
 2. Their changes arrive as an **ordinary pull request**.
-3. **Engineering keeps control** — the `develop` branch requires a pull request, so a writer can
+3. **Engineering keeps control** — the `main` branch requires a pull request, so a writer can
    propose anything and merge nothing.
 
 ## Why it mirrors a monorepo
@@ -57,8 +57,10 @@ in front of non-technical writers: they cannot ship a link to a page that does n
 
 | Branch | Purpose |
 |---|---|
-| `main` | Baseline |
-| `develop` | **The protected branch.** Dhub connects here; changes arrive by pull request |
+| `main` | **The single branch this POC uses.** Protected: Dhub connects here, and changes arrive by pull request |
+
+The real project this stands in for uses a separate `develop` integration branch. A POC does not
+need two, and a second branch is one more thing to keep in step for no benefit.
 
 ## The round-trip test
 

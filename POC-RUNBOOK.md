@@ -11,23 +11,23 @@ actions on accounts only you can sign into.
 |---|---|
 | Docusaurus site scaffolded in a `docs-site/` subfolder | mirrors the real monorepo shape |
 | Five demo pages installed | fictional content, all Markdown features covered |
-| Config pointed at `smanash/test` | `editUrl` → GitHub's web editor on `develop` |
+| Config pointed at `smanash/test` | `editUrl` → GitHub's web editor on `main` |
 | Strict link checking enabled | `onBrokenLinks` + `onBrokenAnchors` both `throw` |
 | Production build passing | zero broken links or anchors |
-| Pushed to GitHub | `main` and `develop` both live |
+| Pushed to GitHub | `main` — the single branch this POC uses |
 | Local preview running | http://localhost:3100 |
 
 ---
 
-## ☐ Step 1 — Protect `develop` (2 minutes)
+## ☐ Step 1 — Protect `main` (2 minutes)
 
 **This is the step the manager demo depends on.** Without it, Act 3 has nothing to show.
 
 1. Go to **https://github.com/smanash/test/settings/rules**
 2. **New ruleset → New branch ruleset**
-3. Name it `protect-develop`
+3. Name it `protect-main`
 4. **Enforcement status: Active**
-5. Target branches → **Add target** → **Include by pattern** → type `develop`
+5. Target branches → **Add target** → **Include by pattern** → type `main`
 6. Tick ✅ **Require a pull request before merging**
 7. Set **Required approvals** to **`0`**
 8. **Create**
@@ -44,11 +44,11 @@ actions on accounts only you can sign into.
 
 ```bash
 cd dhub-poc
-git checkout develop
+git checkout main
 echo "test" >> README.md
 git commit -am "should be refused"
 git push            # ← expect: "Changes must be made through a pull request"
-git reset --hard origin/develop   # undo
+git reset --hard origin/main   # undo
 ```
 
 If that push succeeds, the ruleset isn't active and Act 3 of your demo is not true.
@@ -67,7 +67,7 @@ If that push succeeds, the ruleset isn't active and Act 3 of your demo is not tr
 
 | Field | Value |
 |---|---|
-| **Branch** | `develop` |
+| **Branch** | `main` |
 | **This is a Docusaurus project** | ✅ ticked |
 | **Project directory** | `docs-site` |
 | **Image directory** | `docs-site/static/img` |

@@ -45,10 +45,15 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // "Edit this page" → GitHub's own web editor, on `develop`.
-          // Docusaurus appends the doc's path relative to THIS site directory, so the base
-          // must end at `docs-site/` — the plugin adds the `docs/` segment itself.
-          editUrl: `${GITHUB_REPO}/edit/develop/docs-site/`,
+          // "Edit this page" → GitHub's own web editor, on `main`.
+          // The POC runs on a SINGLE branch: Dhub connects to `main`, the ruleset protects
+          // `main`, and this link targets `main`. The real project uses `develop` as its
+          // protected integration branch; here a second branch would be one more thing to keep
+          // in step for no benefit.
+          //
+          // Docusaurus appends the doc's path relative to THIS site directory, so the base must
+          // end at `docs-site/` — the plugin adds the `docs/` segment itself.
+          editUrl: `${GITHUB_REPO}/edit/main/docs-site/`,
         },
         // No blog on this POC — fewer moving parts to explain in a demo.
         blog: false,
