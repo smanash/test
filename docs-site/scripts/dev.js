@@ -42,13 +42,40 @@ function start(name, command, args, options = {}) {
   return child;
 }
 
+/**
+ * Kill a child AND its descendants.
+ *
+ * `shell: true` means the thing we spawned is a shell, and the real process (node, docusaurus)
+ * is its CHILD. On Windows `child.kill()` kills only the shell, so the grandchild survives
+ * holding its port — which is exactly what happened after an out-of-memory crash: the site died,
+ * the launcher "shut down", and the pull helper was still listening on 3101 afterwards. The next
+ * `npm run dev` then starts a second helper against an occupied port.
+ *
+ * `taskkill /T` walks the process tree; /F because a graceful signal is not a thing a Windows
+ * console app reliably receives from here.
+ */
+function killTree(child) {
+  if (!child.pid || child.killed) return;
+  if (process.platform === 'win32') {
+    // Detached + ignored stdio so a failure here cannot itself hang the shutdown.
+    spawn('taskkill', ['/PID', String(child.pid), '/T', '/F'], {
+      stdio: 'ignore',
+      detached: true,
+      shell: true,
+    }).unref();
+  } else {
+    child.kill();
+  }
+}
+
 function shutdown(code = 0) {
   if (shuttingDown) return;
   shuttingDown = true;
   for (const {child} of children) {
-    if (!child.killed) child.kill();
+    killTree(child);
   }
-  process.exit(code);
+  // Give taskkill a moment to land before this process disappears.
+  setTimeout(() => process.exit(code), 300).unref();
 }
 
 process.on('SIGINT', () => shutdown(0));
