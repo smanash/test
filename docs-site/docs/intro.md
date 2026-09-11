@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Introduction
 ---
 
-# &#x20;test 6— User Guide
+# &#x20;INDIA — User Guide
 
 Northwind Analytics turns a plain-English question into a working dashboard. You describe what you need, and it builds a real page your colleagues can open in a browser, along with somewhere to keep the data behind it.
 
