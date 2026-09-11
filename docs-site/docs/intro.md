@@ -15,7 +15,7 @@ This is a proof-of-concept documentation site. The product described here is fic
 
 :::
 
-## What's in this guide&#x20;
+## What's in this Guide
 
 | Part                                         | Covers                                            | Read it when                  |
 | -------------------------------------------- | ------------------------------------------------- | ----------------------------- |
