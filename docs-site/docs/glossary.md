@@ -10,7 +10,7 @@ Every term this guide uses, alphabetically.
 ### Connection
 
 A stored, encrypted key for an outside service. The password or key is written once and never
-shown again — you can replace it, but you cannot read it back.
+shown again â€” you can replace it, but you cannot read it back.
 
 ### Dataset
 
@@ -23,7 +23,7 @@ Your private copy of a report. Colleagues see the published version, never your 
 
 ### Parameter
 
-A value supplied when a saved question runs, so one question serves many cases — a date range, a
+A value supplied when a saved question runs, so one question serves many cases â€” a date range, a
 region, a product category.
 
 ### Provisioned
@@ -44,3 +44,7 @@ rather than each rebuilding the same query.
 ### Workspace
 
 Your organisation's area of Northwind: the short name after `/w/` in every address.
+
+### Pull request
+
+A proposed change waiting for a reviewer. Created by this editor when you press Save.
