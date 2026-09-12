@@ -3,9 +3,10 @@
 A throwaway Docusaurus site used to evaluate **[Dhub](https://dhub.dev)** — a Git-backed visual
 CMS — as a way of letting non-developers maintain documentation.
 
-> **The content in this repository is fictional.** "Northwind Analytics" is an invented product,
-> written purely to exercise the Markdown features a real manual uses. Nothing here is
-> confidential or belongs to any employer.
+> **The content is the Flexday AI Studio user manual**, whose own cover page states
+> `Classification: Public`. This repository is public, so the manual is world-readable and
+> search-indexable under a personal account. Make the repository private if that is not wanted —
+> nothing in the POC depends on it being public.
 
 ## What this POC is proving
 

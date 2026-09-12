@@ -1,46 +1,101 @@
 ---
-sidebar_position: 5
+id: glossary
 title: Glossary
+sidebar_label: Glossary
+sidebar_position: 99
 ---
 
-# Glossary
+Every term defined in the manual, alphabetically. Follow a term back to the section that
+introduced it by clicking the section title in this manual's sidebar.
 
-Every term this guide uses, alphabetically.
+### Agent
+
+An assistant that chooses its own steps within your limits.
+
+### Append / Replace
+
+Add rows to what is there, or clear first and then load.
+
+### Audience
+
+A tag on a file or document deciding who may read it.
+
+### Bot
+
+An assistant answering inside Microsoft Teams.
+
+### Chunk
+
+A passage a document was split into so it can be searched.
 
 ### Connection
 
-A stored, encrypted key for an outside service. The password or key is written once and never
-shown again — you can replace it, but you cannot read it back.
+A stored, encrypted key for an outside service.
 
-### Dataset
+### Data Portrait
 
-Your records in tables, ready to be counted and filtered. A dataset belongs to one workspace and
-may be read by any report connected to it.
+The agreed meaning of your data: concepts, metrics, assumptions.
 
-### Draft
+### Doc Base
 
-Your private copy of a report. Colleagues see the published version, never your draft.
+Documents searchable by meaning, with citations.
+
+### Draft / Publish
+
+Your private copy, and the version everyone else uses.
+
+### Eval
+
+Saved test questions proving an agent still behaves after a change.
+
+### Fact Base
+
+Your records in tables, ready to be counted and filtered.
+
+### File Store
+
+Where uploaded files live, and who may read them.
+
+### Flex Gateway
+
+A way for another system to ask your Solution for something.
+
+### Flow
+
+Steps that run in the order you set.
+
+### Guardrail
+
+A limit on what an agent may say or do.
+
+### Identity
+
+How the people using your app sign in to it.
+
+### Launchpad
+
+The app your users open in a browser.
 
 ### Parameter
 
-A value supplied when a saved question runs, so one question serves many cases — a date range, a
-region, a product category.
+A value supplied when a query runs, so one question serves many cases.
 
 ### Provisioned
 
-The real storage behind a dataset has been created and can hold data. A dataset that is not
-provisioned can be described but not loaded.
+The real storage for a Fact Base has been created; it can hold data.
 
-### Report
+### Query
 
-A page your colleagues open in a browser. A report reads from one or more datasets and is
-published separately from your draft.
+A saved question against a Fact Base, such as “revenue by region”.
 
-### Saved question
+### Solution
 
-A question you asked once and kept, such as *"revenue by region"*. Reports use saved questions
-rather than each rebuilding the same query.
+One project, holding its app, its data and its automation.
+
+### Version
+
+A kept record of one publish, so you can go back.
 
 ### Workspace
 
-Your organisation's area of Northwind: the short name after `/w/` in every address.
+Your organization’s area of flexday.ai: the short name after `/t/` in every address.

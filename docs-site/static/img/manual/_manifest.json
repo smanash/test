@@ -1,0 +1,482 @@
+[
+  {
+    "part": 2,
+    "file": "20-solutions-list",
+    "section": "2.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 2,
+    "file": "21-solution-overview",
+    "section": "2.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 2,
+    "file": "22-resources",
+    "section": "2.4",
+    "url": "http://localhost:3000/t/flexday-ai/resources",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 3,
+    "file": "30-builder",
+    "section": "3.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/builder",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 3,
+    "file": "31-solution-history",
+    "section": "3.6",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/history",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 4,
+    "file": "40-factbases-list",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/data-studio/fact-bases",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "41-factbase-overview",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "42-factbase-tables",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/tables",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "43-factbase-diagram",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/diagram",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "44-factbase-queries",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/queries",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "45-factbase-ingestion",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/ingestion",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "46-factbase-provision",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/provision",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "47-factbase-monitoring",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/monitoring",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "48-factbase-roles",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/roles",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "49-factbase-versions",
+    "section": "4.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/fact-bases/01M1EKP70WRJDC4RKB1VH2H5A0/versions",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "50-docbases-list",
+    "section": "4.2",
+    "url": "http://localhost:3000/t/flexday-ai/data-studio/doc-bases",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "51-docbase-overview",
+    "section": "4.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/doc-bases/01M1EKE4NW21TC0NGTX202K3EP",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "52-docbase-files",
+    "section": "4.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/doc-bases/01M1EKE4NW21TC0NGTX202K3EP/files",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "53-docbase-search",
+    "section": "4.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/doc-bases/01M1EKE4NW21TC0NGTX202K3EP/search",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "54-docbase-settings",
+    "section": "4.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/doc-bases/01M1EKE4NW21TC0NGTX202K3EP/settings",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "55-filestores-list",
+    "section": "4.3",
+    "url": "http://localhost:3000/t/flexday-ai/data-studio/file-stores",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "56-filestore-files",
+    "section": "4.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/file-stores/01M1EKP71XW3JG3FPZEJH7TFNS/files",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "57-filestore-access",
+    "section": "4.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/file-stores/01M1EKP71XW3JG3FPZEJH7TFNS/access",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "58-portraits-list",
+    "section": "4.4",
+    "url": "http://localhost:3000/t/flexday-ai/data-studio/data-portraits",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "59-portrait-overview",
+    "section": "4.4",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/data-portraits/01M1EM0G799QX32C5DEH2QS876/overview",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 4,
+    "file": "60-portrait-ontology",
+    "section": "4.4",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/data-portraits/01M1EM0G799QX32C5DEH2QS876/ontology/domain",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 4,
+    "file": "61-portrait-profile",
+    "section": "4.4",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/data-portraits/01M1EM0G799QX32C5DEH2QS876/profile",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 5,
+    "file": "65-launchpads-list",
+    "section": "5.1",
+    "url": "http://localhost:3000/t/flexday-ai/apps/launchpads",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 5,
+    "file": "66-launchpad-overview",
+    "section": "5.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/launchpads/01M1EKE5RFX64EX029D4H67NS3",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 5,
+    "file": "67-launchpad-builder",
+    "section": "5.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/launchpads/01M1EKE5RFX64EX029D4H67NS3/builder",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 5,
+    "file": "68-launchpad-queries",
+    "section": "5.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/launchpads/01M1EKE5RFX64EX029D4H67NS3/queries",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 5,
+    "file": "69-launchpad-files",
+    "section": "5.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/launchpads/01M1EKE5RFX64EX029D4H67NS3/files",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 5,
+    "file": "70-bots-list",
+    "section": "5.2",
+    "url": "http://localhost:3000/t/flexday-ai/apps/bots",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 5,
+    "file": "71-bot-new",
+    "section": "5.2",
+    "url": "http://localhost:3000/t/flexday-ai/apps/bots/new",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "75-flows-list",
+    "section": "6.2",
+    "url": "http://localhost:3000/t/flexday-ai/executors/flows",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "76-flow-builder",
+    "section": "6.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/flows/01M1EKE59WCYYHA3EX1Y1V88QP/builder",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "77-flow-runs",
+    "section": "6.2",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/flows/01M1EKE59WCYYHA3EX1Y1V88QP/runs",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 6,
+    "file": "78-agents-list",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/executors/agents",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "79-agent-overview",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "80-agent-instructions",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/instructions",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "81-agent-tools",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/tools",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 6,
+    "file": "82-agent-knowledge",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/knowledge",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "83-agent-guardrails",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/guardrails",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "84-agent-playground",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/playground",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 6,
+    "file": "85-agent-evals",
+    "section": "6.3",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/agents/01M1EKE57VPXVMHWK7PF42Z8YD/evals",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 6,
+    "file": "86-gateways-list",
+    "section": "6.4",
+    "url": "http://localhost:3000/t/flexday-ai/executors/gateway",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 6,
+    "file": "87-gateway-endpoints",
+    "section": "6.4",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/gateway/01M1EKE5HPYT40V4R5PW115Q5S/endpoints",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 6,
+    "file": "88-gateway-auth",
+    "section": "6.4",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/gateway/01M1EKE5HPYT40V4R5PW115Q5S/authentication",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 7,
+    "file": "90-solution-people",
+    "section": "7.1",
+    "url": "http://localhost:3000/t/flexday-ai/solutions/01M1EKE48MEEP36EEF26X34VZV/people",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 7,
+    "file": "91-identities-list",
+    "section": "7.2",
+    "url": "http://localhost:3000/t/flexday-ai/credentials/identities",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 7,
+    "file": "92-connections-list",
+    "section": "7.3",
+    "url": "http://localhost:3000/t/flexday-ai/credentials/connections",
+    "status": "empty",
+    "notes": [
+      "page shows an empty state"
+    ]
+  },
+  {
+    "part": 7,
+    "file": "93-connection-new",
+    "section": "7.3",
+    "url": "http://localhost:3000/t/flexday-ai/credentials/connections/new",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 8,
+    "file": "95-members",
+    "section": "8.1",
+    "url": "http://localhost:3000/t/flexday-ai/members",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 8,
+    "file": "96-workspace-usage",
+    "section": "8.2",
+    "url": "http://localhost:3000/t/flexday-ai/usage",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 8,
+    "file": "97-ai-models",
+    "section": "8.3",
+    "url": "http://localhost:3000/t/flexday-ai/ai-models",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 8,
+    "file": "98-settings",
+    "section": "8.4",
+    "url": "http://localhost:3000/t/flexday-ai/settings",
+    "status": "ok",
+    "notes": []
+  },
+  {
+    "part": 1,
+    "file": "05-search-typing",
+    "section": "1.3",
+    "url": "http://localhost:3000/t/flexday-ai",
+    "status": "ok",
+    "notes": []
+  }
+]
