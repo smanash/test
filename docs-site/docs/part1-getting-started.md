@@ -7,7 +7,7 @@ sidebar_position: 1
 
 *From opening flexday.ai to having your first working app.*
 
-## 1.1 What flexday.ai does .
+## 1.1 What flexday.ai does.
 
 flexday.ai builds working software from a sentence. You type what you need ("a dashboard showing revenue by region") and it produces a real page your colleagues can open in a browser, along with somewhere to keep the data that page read.
 
