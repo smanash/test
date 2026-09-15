@@ -7,7 +7,7 @@ sidebar_position: 2
 
 *The handful of words flexday.ai uses for its own parts. Read this once and the rest of the manual reads easily.*
 
-## 2.1 Solutions hold everything else
+## 2.1 Solutions hold everything else .
 
 > `/t/<workspace>/solutions`
 
