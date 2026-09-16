@@ -7,7 +7,7 @@ sidebar_position: 8
 
 *For the one or two people who look after the workspace. Everyone else can skip this part.*
 
-## 8.1 Members
+## 8.1 Members...
 
 > `/t/<workspace>/members`
 
