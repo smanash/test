@@ -6,7 +6,7 @@ sidebar_position: 0
 slug: /
 ---
 
-# flexday.ai User Manual
+# flexday.ai User Manuals
 
 Describe the app you want in plain English and flexday.ai builds it: a working page your team can open, plus the data behind it. This manual takes you from your first sign-in to running your own apps, agents and automations. No coding, and no prior knowledge assumed.
 
