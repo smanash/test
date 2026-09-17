@@ -1,10 +1,14 @@
 
+
+![Describe this image](/img/manual/chat-color-192.png)
+
+
 *From opening flexday.ai to having your first working app.*
 
 ## 1.1 What flexday.ai does
 
 
-flexday.ai builds working software from a sentence. You type what you need ("a dashboard showing revenue by region") and it produces a real page your colleagues can open in a browser, along with somewhere to keep the data that page read.
+flexday.ai builds working software from a sentence. You type what you need ("a dashboard showing revenue by region") and it produces a real page your colleagues can open in a browser, along with somewhere to keep the data that page read.okok
 
 You then keep talking to it. Ask for a chart to be added, a column removed, a filter put at the top, and it changes the app. Nothing is thrown away and started again; you refine what is already there.
 
