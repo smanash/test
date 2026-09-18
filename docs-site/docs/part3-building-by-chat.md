@@ -8,7 +8,7 @@ sidebar_position: 3
 
 *The Builder is where you will spend most of your time, and it works unlike most software. This part is worth reading slowly.*
 
-## 3.1 The Builder screen okok
+## 3.1 The Builder screen 
 
 > `/solutions/<id>/builder`
 
