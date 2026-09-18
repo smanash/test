@@ -5,11 +5,10 @@ title: "PART 3: Building by chat"
 sidebar_label: "Building by chat"
 sidebar_position: 3
 ---
-![Describe this image](/img/manual/network-color-192.png)
 
 *The Builder is where you will spend most of your time, and it works unlike most software. This part is worth reading slowly.*
 
-## 3.1 The Builder screen okok
+## 3.1 The Builder screen 
 
 > `/solutions/<id>/builder`
 
