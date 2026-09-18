@@ -4,10 +4,11 @@ title: "PART 4: Your data"
 sidebar_label: "Your data"
 sidebar_position: 4
 ---
+![Describe this image](/img/manual/plus-color-192.png)
 
 *Four places data lives, and what each is for. This is the longest part; read the section you need and skip the rest.*
 
-## 4.1 Fact Bases: your figures
+## 4.1 Fact Bases: your figures ok
 
 > `/t/<workspace>/data-studio/fact-bases`
 
