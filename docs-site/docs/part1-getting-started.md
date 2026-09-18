@@ -1,7 +1,5 @@
 
 
-![Describe this image](/img/manual/bolt-color-192.png)
-
 *From opening flexday.ai to having your first working app.*
 
 ## 1.1 What flexday.ai does
